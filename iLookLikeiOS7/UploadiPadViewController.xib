@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.iPad.XIB" version="3.0" toolsVersion="4488.2" systemVersion="12E55" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3715.3"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UploadiPadViewController">
+            <connections>
+                <outlet property="cameraRollBtn" destination="I2r-eH-kmy" id="bf2-wC-qWc"/>
+                <outlet property="cameraRollIcon" destination="ATQ-kj-HXb" id="2bl-sk-5qB"/>
+                <outlet property="deviceCameraBtn" destination="cvW-No-Rb4" id="KSX-X8-MUo"/>
+                <outlet property="deviceCameraIcon" destination="1ON-0P-w5e" id="U7h-Wq-O2c"/>
+                <outlet property="goBackBtn" destination="woy-FD-3R8" id="ke7-7U-Wbe"/>
+                <outlet property="goBackIcon" destination="m5d-EU-PHL" id="uxL-R4-kie"/>
+                <outlet property="helpBtn" destination="Zmr-Wi-WzU" id="zfh-Ua-YMn"/>
+                <outlet property="helpIcon" destination="KCC-BP-YKH" id="PLp-d5-ZbP"/>
+                <outlet property="mainView" destination="xXD-TV-t6r" id="9s0-L9-TdP"/>
+                <outlet property="myImage" destination="cAl-lM-9Ag" id="bVO-cd-Wwh"/>
+                <outlet property="previewView" destination="SCa-tu-uao" id="D2W-sM-BF3"/>
+                <outlet property="randomBtn" destination="JIE-WY-w1p" id="lBu-mJ-BCI"/>
+                <outlet property="randomIcon" destination="pRT-yh-jnF" id="4vx-IC-Fnk"/>
+                <outlet property="startView" destination="eRK-xC-37V" id="TTN-ZE-HAw"/>
+                <outlet property="superMainView" destination="2" id="jym-9o-wKs"/>
+                <outlet property="view" destination="2" id="3"/>
+                <outlet property="viewWallpaper" destination="ZLE-ZW-J8Y" id="cpb-cm-PDm"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="2">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZLE-ZW-J8Y">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xXD-TV-t6r">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I2r-eH-kmy">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="350"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="42"/>
+                            <state key="normal" title="Camera Roll">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="useCameraRoll" destination="-1" eventType="touchUpInside" id="QK5-cP-7hg"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cvW-No-Rb4">
+                            <rect key="frame" x="386" y="0.0" width="382" height="350"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="42"/>
+                            <state key="normal" title="Device Camera">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="useCamera" destination="-1" eventType="touchUpInside" id="znf-pl-spz"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="woy-FD-3R8">
+                            <rect key="frame" x="0.0" y="654" width="382" height="350"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="42"/>
+                            <state key="normal" title="Go Back">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="goBack:" destination="-1" eventType="touchUpInside" id="CFC-ef-dYY"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JIE-WY-w1p">
+                            <rect key="frame" x="0.0" y="351" width="768" height="302"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="42"/>
+                            <state key="normal" title="Random Image">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="random:" destination="-1" eventType="touchUpInside" id="sk3-sN-ATe"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zmr-Wi-WzU">
+                            <rect key="frame" x="386" y="654" width="382" height="350"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="42"/>
+                            <state key="normal" title="Help">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="help:" destination="-1" eventType="touchUpInside" id="au3-y9-E8t"/>
+                            </connections>
+                        </button>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CameraRollImportCleared.png" translatesAutoresizingMaskIntoConstraints="NO" id="ATQ-kj-HXb">
+                            <rect key="frame" x="164" y="40" width="54" height="120"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="CameraImportFilled.png" translatesAutoresizingMaskIntoConstraints="NO" id="1ON-0P-w5e">
+                            <rect key="frame" x="517" y="40" width="120" height="120"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Random.png" translatesAutoresizingMaskIntoConstraints="NO" id="pRT-yh-jnF">
+                            <rect key="frame" x="234" y="411" width="301" height="76"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="BackBtn.png" translatesAutoresizingMaskIntoConstraints="NO" id="m5d-EU-PHL">
+                            <rect key="frame" x="131" y="684" width="120" height="120"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Help.png" translatesAutoresizingMaskIntoConstraints="NO" id="KCC-BP-YKH">
+                            <rect key="frame" x="517" y="684" width="120" height="120"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                    </subviews>
+                </view>
+                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SCa-tu-uao">
+                    <rect key="frame" x="768" y="0.0" width="768" height="1024"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YZ4-1g-6qh">
+                            <rect key="frame" x="0.0" y="0.0" width="768" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <items>
+                                <navigationItem title="Use Image?" id="H26-sE-ERD">
+                                    <barButtonItem key="leftBarButtonItem" title="Cancel" id="As0-oi-hPa">
+                                        <connections>
+                                            <action selector="cancelUploadedImage:" destination="-1" id="1Wr-2Y-uNG"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem key="rightBarButtonItem" title="Use" id="YNI-c1-7hP">
+                                        <connections>
+                                            <action selector="useUploadedImage:" destination="-1" id="ZFg-x1-B3g"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </navigationItem>
+                            </items>
+                        </navigationBar>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cAl-lM-9Ag">
+                            <rect key="frame" x="0.0" y="44" width="768" height="980"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+        </view>
+        <view contentMode="scaleToFill" id="eRK-xC-37V">
+            <rect key="frame" x="0.0" y="0.0" width="768" height="1004"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rja-rd-7pY">
+                    <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" name="Marion-Regular" family="Marion" pointSize="150"/>
+                    <size key="titleShadowOffset" width="10" height="10"/>
+                    <state key="normal" title="START">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="startShowFriend:" destination="-1" eventType="touchUpInside" id="S3d-zw-p7U"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="BackBtn.png" width="243" height="262"/>
+        <image name="CameraImportFilled.png" width="223" height="216"/>
+        <image name="CameraRollImportCleared.png" width="112" height="278"/>
+        <image name="Help.png" width="112" height="148"/>
+        <image name="Random.png" width="185" height="105"/>
+        <image name="icon.png" width="2048" height="2048"/>
+    </resources>
+</document>
